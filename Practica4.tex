@@ -1,0 +1,66 @@
+\documentclass{article}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,activeacute]{babel}
+\usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{{./}}
+
+\title{\Large \bf Teoría de Autómatas y Lenguajes Formales
+
+\LARGE \rm Práctica IV}
+\author{Javier Molina Montiel}
+
+\begin{document}
+\maketitle
+\justify\normalsize
+Actividad 1:
+
+Q = (0,s)
+
+s:
+
+\quad $X_2$:=$X_1$+1;
+
+\quad while $X_2$ != 0 do
+
+\quad\quad $X_1$:=0
+
+\quad od
+
+CODE2N(Q) = 10876
+
+\justify\normalsize
+Actividad 2:
+
+function vectors(N)
+
+for i=0:N-1
+
+disp(['('num2str(godeldecoding(i)) ')'])
+
+end
+
+end
+\justify\normalsize
+Actividad 3:
+
+function whilePrograms(N)
+
+for i=0:N-1
+
+disp(N2WHILE(i))
+
+end
+
+end
+
+\begin{flushleft}
+\includegraphics[width=16cm,height=10cm]{capturaPrac4}
+\end{flushleft}
+
+\end{document}

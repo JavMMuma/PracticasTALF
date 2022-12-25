@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,activeacute]{babel}
+\usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{{./}}
+
+\title{\Large \bf Teoría de Autómatas y Lenguajes Formales
+
+\LARGE \rm Práctica III}
+\author{Javier Molina Montiel}
+
+\begin{document}
+\maketitle
+\justify\normalsize
+Actividad 1:
+
+La turing machine solución de este ejercicio es:
+\[
+\begin{bmatrix}
+0 & * & l & 1\\
+0 & | & | & 0\\
+1 & * & | & 2\\
+1 & | & l & 1\\
+2 & * & l & 3\\
+2 & | & r & 2\\
+3 & * & l & 4\\
+3 & | & * & 3\\
+4 & * & h & 4\\
+4 & | & * & 4
+\end{bmatrix}
+\]
+\includegraphics[width = 13cm, height = 7cm]{tm1}
+
+\justify\normalsize
+Actividad 2:
+
+La funcion recursiva para sumar tres números es:
+
+$<<\pi_1^1 | \sigma (\pi_3^3) > | \sigma (\pi_4^4) >$
+%<<π^1_1|σ(π^3_3)>|σ(π^4_4)>
+\justify\normalsize
+\includegraphics[width = 11cm, height = 7.5cm]{capturaoctave}
+\justify\normalsize
+Actividad 3:
+
+additionthree = (3,s)
+
+s:
+
+\quad while $X_2$ != 0 do 
+
+\quad\quad $X_1$ := $X_1$  + 1;
+
+\quad\quad $X_2$ := $X_2$  - 1
+
+\quad od
+
+\quad \quad while $X_3$ != 0 do 
+
+\quad\quad\quad $X_1$ := $X_1$  + 1;
+
+\quad\quad\quad $X_2$ := $X_3$  - 1
+
+\quad\quad od
+
+\quad\quad\quad $X_1$ := $X_1$
+
+\end{document}
